@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heroes</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  
+<header>
+  <div class="container header-flex">
+        <h1 class="title">Heroes</h1>
+  </div>
+</header>
+
+<section>
+<div class="wrapper">
+  <div class="container">
+    <ul class="filter">
+      <li class="filter__item">
+        <select name="" id="gender">
+          <option value="Not_indicated" selected>Not indicated</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </li>
+      <li class="filter__item">
+        <select name="" id="status">
+          <option value="Not_indicated" selected>Not indicated</option>
+          <option value="deceased">Deceased</option>
+          <option value="alive">Alive</option>
+          <option value="unknown">unknown</option>
+        </select>
+      </li>
+      <li class="filter__item">
+        <select name="" id="citizenship">
+          <option value="Not_indicated" selected>Not indicated</option>
+          <option value="American">American</option>
+          <option value="British">British</option>
+          <option value="Wakandan">Wakandan</option>
+          <option value="Soviet">Soviet</option>
+          <option value="Asgardian">Asgardian</option>
+          <option value="Sokovian">Sokovian</option>
+          <option value="Jotun">Jotun</option>
+          <option value="Nazi German">Nazi German</option>
+          <option value="Chinese">Chinese</option>
+        </select>
+      </li>
+      <li class="filter__item">
+        <select name="" id="species">
+          <option value="Not_indicated" selected>Not indicated</option>
+          <option value="human">Human</option>
+          <option value="Centaurian">Centaurian</option>
+          <option value="Celestial">Celestial</option>
+          <option value="Zehoberei">Zehoberei</option>
+          <option value="flora colossus">flora colossus</option>
+          <option value="Asgardian">Asgardian</option>
+          <option value="kronan">kronan</option>
+          <option value="Frost Giant">Frost Giant</option>
+          <option value="Titan">Titan</option>
+          <option value="Android">Android</option>
+        </select>
+      </li>
+      <li>
+        <button id="button">Choose</button>
+      </li>
+    </ul>
+  </div>
+</div>
+</section>
+
+<main>
+  <div class="container">
+    <section class="heroes">
+        <ul class="heroes__list">
+        </ul>
+    </section>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+
+  background-color: rgb(255, 255, 255);
+  font-family: 'Sansita Swashed', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: black;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.header-flex {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+main {
+  margin-top: 60px;
+}
+
+.heroes__head {
+  margin: 15px 0;
+}
+
+.heroes__list {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 185px);
+  grid-gap: 1rem;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+
+.heroes__item {
+  min-width: 185px;
+  margin: 15px 10px 30px;
+}
+
+.tv-card {
+  position: relative;
+  max-width: 185px;
+  min-height: 370px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-shadow: 3px 3px 20px 1px rgba(200, 200, 200, .75);
+  box-shadow: 3px 3px 20px 1px rgba(200, 200, 200, .75);
+}
+
+.tv-card__head {
+  padding: 5px 5px;
+  max-height: 200px;
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  font-weight: 400;
+}
+
+.tv-card__img {
+  height: 278px;
+  width: 185px;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  background: linear-gradient(orangered, gold);
+  padding: 16px 0;
+  border: 2px solid rgb(48, 14, 168);
+  box-shadow: 3px 3px 20px 1px rgba(200, 200, 200, .75);
+}
+
+.filter__item {
+  border: none !important;
+  outline: none;
+  border-radius: 10px;
+}
+
+li > button {
+  background-color: rgb(9, 125, 202);
+  color: #fff;
+  border-radius: 10px;
+  width: 200px;
+  height: 30px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
